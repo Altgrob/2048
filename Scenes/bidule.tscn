@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2op364i4pl0c"]
+
+[ext_resource type="Texture2D" uid="uid://c3m2om3tkbwo7" path="res://Assets/03-Pig/Idle (34x28).png" id="1_pxafh"]
+[ext_resource type="Script" path="res://Scripts/bidule.gd" id="1_undk5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtic7"]
+
+[node name="Bidule" type="Area2D"]
+script = ExtResource("1_undk5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, -14)
+texture = ExtResource("1_pxafh")
+hframes = 11
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_mtic7")
